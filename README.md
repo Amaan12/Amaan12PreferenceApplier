@@ -31,7 +31,7 @@ This single command automatically applies:
   * `S`: Scale Tool
 * **Viewport Navigation**:
   * `Middle Mouse Button (MMB)`: Orbit Scene View
-  * `Shift + MMB`: Pan Scene View
+  * `Alt + MMB`: Pan Scene View *(Shift + MMB is not possible due to Unity internals)*
 * **Window Management**:
   * `F12`: Toggle Focused Window Fullscreen (yFullScreen)
 

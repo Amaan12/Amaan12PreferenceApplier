@@ -26,7 +26,7 @@ namespace Amaan12.Preferences
                 EditorUtility.DisplayDialog(
                     "Amaan12 Preferences",
                     "Personal Preferences applied successfully!\n\n" +
-                    "• Shortcuts: 'Default copy' (G: Move, R: Rotate, S: Scale, MMB: Orbit, Shift+MMB: Pan, F12: Fullscreen)\n" +
+                    "• Shortcuts: 'Default copy' (G: Move, R: Rotate, S: Scale, MMB: Orbit, Alt+MMB: Pan, F12: Fullscreen)\n" +
                     "• Colors: Lime Playmode Tint (#E0FF53)\n" +
                     "• Scene & Objects: Spawn at World Origin (0,0,0) & 4x MSAA\n" +
                     "• General: Recompile after finished playing & Manual Prefab Save\n" +
