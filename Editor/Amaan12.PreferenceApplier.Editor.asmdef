@@ -1,0 +1,16 @@
+{
+    "name": "Amaan12.PreferenceApplier.Editor",
+    "rootNamespace": "Amaan12.Preferences",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
