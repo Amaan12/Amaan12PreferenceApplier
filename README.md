@@ -88,6 +88,36 @@ code --install-extension "VS Code\token-completer-0.0.1.vsix"
 
 ## Windows Preferences
 
+One-command setup for personal Windows OS preferences, File Explorer view settings, taskbar layout, dark mode, date formatting, and classic tweaks.
+
+### Quick Install (PowerShell)
+
+Open PowerShell on any Windows machine and run:
+
+```powershell
+irm https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/Windows/setup.ps1 | iex
+```
+
+> Applies all settings instantly to your user account and restarts Windows Explorer. No repository clone or download required.
+
+### What It Sets
+
+* **Show Hidden Files and Folders** (`Hidden = 1`)
+* **Show Known File Extensions** (`HideFileExt = 0`)
+* **Left-Aligned Taskbar** (`TaskbarAl = 0`)
+* **Task View Button Hidden** (`ShowTaskViewButton = 0`)
+* **Taskbar Widgets / Dashboard Hidden** (`TaskbarDa = 0`)
+* **Windows System Dark Mode** (`SystemUsesLightTheme = 0`)
+* **Apps Dark Mode** (`AppsUseLightTheme = 0`)
+* **Transparency Effects Enabled** (`EnableTransparency = 1`)
+* **Long Paths Enabled** (`LongPathsEnabled = 1`)
+* **Short Date Format** (`dd-MMM-yy`)
+* **Custom Accent Color** (`#00A898` / `4286644328`)
+* **Accent Color Disabled on Title Bars and Borders** (`ColorPrevalence = 0`)
+* **Aero Peek Enabled** (`EnableAeroPeek = 1`)
+* **Classic Windows 10 Right-Click Context Menu** (bypasses Windows 11 *"Show more options"*)
+* **Title Bar Window Shake (Aero Shake)**
+
 ---
 
 ## License
