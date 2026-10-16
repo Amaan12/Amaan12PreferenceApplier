@@ -61,6 +61,14 @@ Import [`Krunker.io/settings.txt`](Krunker.io/settings.txt) directly into the in
 
 ---
 
+## VS Code Preferences
+
+---
+
+## Windows Preferences
+
+---
+
 ## License
 
 [MIT](LICENSE.md)
