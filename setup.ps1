@@ -17,12 +17,15 @@ if (-not (Test-Path $layoutRootDir)) { [System.IO.Directory]::CreateDirectory($l
 if (-not (Test-Path $layoutDefaultDir)) { [System.IO.Directory]::CreateDirectory($layoutDefaultDir) | Out-Null }
 
 # 2. Deploy Shortcut and Layout assets
-$baseUrl = "https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main"
+$baseUrl = "https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/Unity"
 $shortcutFileName = "Default copy.shortcut"
 $layoutFileName = "2 by 3 - 2026.wlt"
 
 function Deploy-File ($fileName, [string[]]$destPaths) {
-    $localFile = if ($PSScriptRoot) { Join-Path $PSScriptRoot $fileName } else { $null }
+    $localFile = if ($PSScriptRoot) {
+        $unityPath = Join-Path $PSScriptRoot "Unity\$fileName"
+        if (Test-Path $unityPath) { $unityPath } else { Join-Path $PSScriptRoot $fileName }
+    } else { $null }
     $tempFile = $null
 
     if ($localFile -and (Test-Path $localFile)) {
