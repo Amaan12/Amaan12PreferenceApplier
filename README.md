@@ -53,6 +53,14 @@ irm https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/Unit
 
 ---
 
+## Krunker.io Preferences
+
+Personal competitive configuration for Krunker.io. Includes tuned sensitivities, custom HUD scaling, crosshairs, audio levels, and per-class viewmodel offsets optimized for clean visuals and FPS performance.
+
+Import [`Krunker.io/settings.txt`](Krunker.io/settings.txt) directly into the in-game settings menu via **Settings > Import**.
+
+---
+
 ## License
 
 [MIT](LICENSE.md)
