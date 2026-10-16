@@ -1,8 +1,14 @@
 # Amaan12 Preference Applier
 
+Personal preferences, shortcuts, and layout configurations for rapid dev environment setups across different tools and software.
+
+---
+
+## Unity Preferences
+
 One-command setup for personal Unity preferences, Blender-style shortcuts, and custom window layouts.
 
-## Quick Install (PowerShell)
+### Quick Install (PowerShell)
 
 Open PowerShell on any Windows machine and run:
 
@@ -12,9 +18,7 @@ irm https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/Unit
 
 > Applies everything globally to Unity in seconds without touching your project files or Git history.
 
----
-
-## What It Sets
+### What It Sets
 
 * **Shortcuts (`Default copy`)**:
   * `G`: Move Tool (Grab)
