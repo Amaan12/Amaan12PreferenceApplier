@@ -23,8 +23,9 @@ $layoutFileName = "2 by 3 - 2026.wlt"
 
 function Deploy-File ($fileName, [string[]]$destPaths) {
     $localFile = if ($PSScriptRoot) {
-        $unityPath = Join-Path $PSScriptRoot "Unity\$fileName"
-        if (Test-Path $unityPath) { $unityPath } else { Join-Path $PSScriptRoot $fileName }
+        $siblingPath = Join-Path $PSScriptRoot $fileName
+        $subfolderPath = Join-Path $PSScriptRoot "Unity\$fileName"
+        if (Test-Path $siblingPath) { $siblingPath } elseif (Test-Path $subfolderPath) { $subfolderPath } else { $null }
     } else { $null }
     $tempFile = $null
 

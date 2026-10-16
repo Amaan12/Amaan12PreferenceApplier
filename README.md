@@ -7,7 +7,7 @@ One-command setup for personal Unity preferences, Blender-style shortcuts, and c
 Open PowerShell on any Windows machine and run:
 
 ```powershell
-irm https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/setup.ps1 | iex
+irm https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/Unity/setup.ps1 | iex
 ```
 
 > Applies everything globally to Unity in seconds without touching your project files or Git history.
