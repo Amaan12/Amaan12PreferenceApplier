@@ -95,7 +95,7 @@ One-command setup for personal Windows OS preferences, File Explorer view settin
 Open PowerShell on any Windows machine and run:
 
 ```powershell
-irm https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/Windows/setup.ps1 | iex
+curl.exe -sSL https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/Windows/setup.ps1 -o "$env:TEMP\setup.ps1"; & "$env:TEMP\setup.ps1"
 ```
 
 > Applies all settings instantly to your user account and restarts Windows Explorer. No repository clone or download required.
