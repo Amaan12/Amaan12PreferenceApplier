@@ -20,22 +20,36 @@ irm https://raw.githubusercontent.com/Amaan12/Amaan12PreferenceApplier/main/Unit
 
 ### What It Sets
 
-* **Shortcuts (`Default copy`)**:
-  * `G`: Move Tool (Grab)
-  * `R`: Rotate Tool
-  * `S`: Scale Tool
-  * `MMB`: Orbit Scene View
-  * `Alt + MMB`: Pan Scene View *(Shift + MMB is not possible due to Unity internals as it causes conflicts with MMB)*
-  * `F12`: Toggle Fullscreen
-* **Preferences**:
-  * Lime Playmode Tint (`#E0FF53`)
-  * Spawn at World Origin `(0, 0, 0)`
-  * Recompile After Finished Playing
-  * Disable Auto-Save in Prefab Mode
-  * 4x MSAA in Scene View
-  * Clean Hierarchy (no alternating row backgrounds, prompt to rename new objects)
-* **Layout**:
-  * Deploys custom **`2 by 3 - 2026`** window layout to Unity's global Layouts menu.
+<details>
+<summary><b>Shortcuts (<code>Default copy</code>)</b></summary>
+
+* `G`: Move Tool (Grab)
+* `R`: Rotate Tool
+* `S`: Scale Tool
+* `MMB`: Orbit Scene View
+* `Alt + MMB`: Pan Scene View *(Shift + MMB is not possible due to Unity internals as it causes conflicts with MMB)*
+* `F12`: Toggle Fullscreen
+
+</details>
+
+<details>
+<summary><b>Preferences</b></summary>
+
+* Lime Playmode Tint (`#E0FF53`)
+* Spawn at World Origin `(0, 0, 0)`
+* Recompile After Finished Playing
+* Disable Auto-Save in Prefab Mode
+* 4x MSAA in Scene View
+* Clean Hierarchy (no alternating row backgrounds, prompt to rename new objects)
+
+</details>
+
+<details>
+<summary><b>Layout</b></summary>
+
+* Deploys custom **`2 by 3 - 2026`** window layout to Unity's global Layouts menu.
+
+</details>
 
 ---
 
