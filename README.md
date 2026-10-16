@@ -69,6 +69,29 @@ Import [`Krunker.io/settings.txt`](Krunker.io/settings.txt) directly into the in
 
 ---
 
+## VS Code
+
+Backup of personal Visual Studio Code preferences, keybindings, custom snippets, and extension list in [`VS Code/`](VS%20Code).
+
+### Contents
+* **`settings.json`**: Global editor configurations, themes, typography, formatting, and tool settings.
+* **`keybindings.json`**: Custom shortcuts (e.g. `Ctrl + Tab` / `Ctrl + Shift + Tab` tab switching).
+* **`extensions.txt`**: Complete list of installed user extensions.
+* **`snippets/`**: Custom language snippets (`csharp.json`, `UnityUSS.json`, `UnityUXML.json`).
+
+### Quick Restore on Windows
+Copy the backup files into your VS Code User configuration folder:
+```powershell
+Copy-Item "VS Code\settings.json", "VS Code\keybindings.json" -Destination "$env:APPDATA\Code\User\" -Force
+Copy-Item "VS Code\snippets\*" -Destination "$env:APPDATA\Code\User\snippets\" -Force
+```
+To install all extensions from `extensions.txt`:
+```powershell
+Get-Content "VS Code\extensions.txt" | ForEach-Object { code --install-extension $_ }
+```
+
+---
+
 ## License
 
 [MIT](LICENSE.md)
