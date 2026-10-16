@@ -63,20 +63,13 @@ Import [`Krunker.io/settings.txt`](Krunker.io/settings.txt) directly into the in
 
 ## VS Code Preferences
 
----
-
-## Windows Preferences
-
----
-
-## VS Code
-
-Backup of personal Visual Studio Code preferences, keybindings, custom snippets, and extension list in [`VS Code/`](VS%20Code).
+Backup of personal Visual Studio Code preferences, keybindings, custom snippets, extension list, and local plugins in [`VS Code/`](VS%20Code).
 
 ### Contents
 * **`settings.json`**: Global editor configurations, themes, typography, formatting, and tool settings.
 * **`keybindings.json`**: Custom shortcuts (e.g. `Ctrl + Tab` / `Ctrl + Shift + Tab` tab switching).
 * **`extensions.txt`**: Complete list of installed user extensions.
+* **`token-completer-0.0.1.vsix`**: Offline installer for the custom local token-completer extension.
 * **`snippets/`**: Custom language snippets (`csharp.json`, `UnityUSS.json`, `UnityUXML.json`).
 
 ### Quick Restore on Windows
@@ -85,10 +78,15 @@ Copy the backup files into your VS Code User configuration folder:
 Copy-Item "VS Code\settings.json", "VS Code\keybindings.json" -Destination "$env:APPDATA\Code\User\" -Force
 Copy-Item "VS Code\snippets\*" -Destination "$env:APPDATA\Code\User\snippets\" -Force
 ```
-To install all extensions from `extensions.txt`:
+To install all marketplace extensions and the local extension:
 ```powershell
 Get-Content "VS Code\extensions.txt" | ForEach-Object { code --install-extension $_ }
+code --install-extension "VS Code\token-completer-0.0.1.vsix"
 ```
+
+---
+
+## Windows Preferences
 
 ---
 
